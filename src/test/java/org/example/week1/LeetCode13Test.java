@@ -1,9 +1,8 @@
-package org.example.day1;
+package org.example.week1;
 
 import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class LeetCode13Test {
     LeetCode13 solution = new LeetCode13();

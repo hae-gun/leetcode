@@ -1,7 +1,4 @@
-package org.example.day3;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.example.week3;
 
 public class LeetCode28 {
     public int strStr(String haystack, String needle) {

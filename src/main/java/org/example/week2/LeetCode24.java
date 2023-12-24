@@ -1,7 +1,4 @@
-package org.example.day2;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.example.week2;
 
 public class LeetCode24 {
     public ListNode swapPairs(ListNode head) {

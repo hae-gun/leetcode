@@ -1,6 +1,4 @@
-package org.example.day1;
-
-import java.util.*;
+package org.example.week1;
 
 public class Leetcode6 {
     public String convert(String s, int numRows) {

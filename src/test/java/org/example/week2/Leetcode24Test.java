@@ -1,8 +1,7 @@
-package org.example.day2;
+package org.example.week2;
 
 import org.junit.jupiter.api.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;

@@ -1,4 +1,4 @@
-package org.example.day3;
+package org.example.week3;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package org.example.day2;
+package org.example.week2;
 
 import java.math.BigDecimal;
 import java.util.*;

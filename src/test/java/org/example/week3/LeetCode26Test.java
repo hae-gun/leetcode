@@ -1,4 +1,4 @@
-package org.example.day3;
+package org.example.week3;
 
 import org.junit.jupiter.api.*;
 
