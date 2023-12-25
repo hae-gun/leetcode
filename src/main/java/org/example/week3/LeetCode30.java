@@ -19,8 +19,6 @@ public class LeetCode30 {
             inputSubStrings.put(word, inputSubStrings.getOrDefault(word, 0) + 1);
         }
 
-
-
         List<Integer> result = new ArrayList();
 
         //number of words in the words array
