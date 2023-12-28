@@ -10,7 +10,7 @@ public class LeetCode31 {
         if(nums == null || len <= 1) return;
         int i = len - 2;
         while(i >= 0 && nums[i] >= nums[i + 1]) i--; // 1. Find first decreasing element
-        if(i >= 0) {                                 // If not entirely descending
+        if(i >= 0) {                                   // If not entirely descending
             int j = len - 1;                         // Start from the end
             while(nums[j] <= nums[i]) j--;           // 2. Find number just larger then [i]
             swap(nums, i, j);                        // 3. Swap i and j
