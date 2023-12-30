@@ -32,6 +32,5 @@ class LeetCode25Test {
         ListNode resultNode = solution.reverseKGroup(first, Integer.valueOf(k));
         List<Integer> collect = Arrays.stream(result.split(",")).map(Integer::valueOf).collect(Collectors.toList());
         assertThat(resultNode.toString()).isEqualTo(collect.toString());
-
     }
 }
