@@ -1,6 +1,6 @@
 package org.example.day2;
 
-import org.example.day1.Leetcode11;
+import org.example.week2.LeetCode18;
 import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-class Leetcode18Test {
+class LeetCode18Test {
     LeetCode18 solution = new LeetCode18();
 
     @Test
