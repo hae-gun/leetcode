@@ -4,8 +4,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class LeetCode67 {
-    public static String addBinary(String x, String y)
-    {
+    public static String addBinary(String x, String y) {
         int i = x.length() - 1, j = y.length() - 1;
         int carry = 0;
         StringBuilder result = new StringBuilder();
@@ -20,12 +19,10 @@ public class LeetCode67 {
             if (sum == 0 || sum == 1) {
                 result.append(sum);
                 carry = 0;
-            }
-            else if (sum == 2) {
+            } else if (sum == 2) {
                 result.append("0");
                 carry = 1;
-            }
-            else {
+            } else {
                 result.append("1");
                 carry = 1;
             }
