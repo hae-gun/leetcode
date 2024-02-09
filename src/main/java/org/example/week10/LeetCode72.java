@@ -26,6 +26,8 @@ public class LeetCode72 {
                 dp[i][j] = Math.min(dp[i-1][j-1], Math.min(dp[i][j-1], dp[i-1][j])) + 1;
             }
         }
+        System.out.printf("%s - %s \n", word1, word2);
+        showArray(dp);
         return dp[m][n];
     }
 
