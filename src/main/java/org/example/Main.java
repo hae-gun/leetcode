@@ -56,7 +56,8 @@ public class Main {
         // [[1,3],[2,6],[8,10],[15,18]]
         arrStr = arrStr.replaceAll("\\],\\[", ".").replaceAll("\\[", "").replaceAll("\\]", "");
 
-        return Arrays.stream(arrStr.split("\\.")).map(v -> Arrays.stream(v.split(",")).mapToInt(Integer::valueOf).toArray()).toArray(int[][]::new);
+        return Arrays.stream(arrStr.split("\\.")).map(v -> Arrays.stream(v.split(","))
+                .mapToInt(Integer::valueOf).toArray()).toArray(int[][]::new);
     }
 
     public static String[] makeParameter(String[] s, boolean result) {
