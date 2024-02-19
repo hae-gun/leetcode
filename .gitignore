@@ -117,7 +117,8 @@ fabric.properties
 ### Java ###
 # Compiled class file
 *.class
-
+### test class
+target.*
 # Log file
 *.log
 
