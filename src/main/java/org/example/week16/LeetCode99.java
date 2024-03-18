@@ -18,7 +18,6 @@ public class LeetCode99 {
             first.val = val;
         }
     }
-
     private void inorder(TreeNode root) {
         if (root == null) { // 현재 노드가 null이면 아무 것도 하지 않습니다.
             return;
@@ -35,5 +34,4 @@ public class LeetCode99 {
         pre = root; // 이전 노드를 현재 노드로 대체합니다.
         inorder(root.right); // 오른쪽 노드를 나중에 검사합니다.
     }
-
 }
