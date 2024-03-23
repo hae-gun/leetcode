@@ -6,7 +6,6 @@ public class LeetCode108 {
     public TreeNode sortedArrayToBST(int[] nums) {
         return makeBST(nums, 0, nums.length-1);
     }
-
     public TreeNode makeBST(int[] nums, int start, int end) {
         if(start > end)
             return null;
