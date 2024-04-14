@@ -9,3 +9,5 @@
 /compiler.xml
 
 /.idea/*
+
+/target/*
