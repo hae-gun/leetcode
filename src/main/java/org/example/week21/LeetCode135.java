@@ -4,16 +4,33 @@ import java.util.Arrays;
 
 public class LeetCode135 {
     public int candy(int[] ratings) {
-        int[] candy = new int[ratings.length]; // 배열생성
-        Arrays.fill(candy, 1); // 1초기화
-        for (int i = 0; i < candy.length; i++) { // 순환
-            if (i != 0 && ratings[i-1] > ratings[i]) { // 좌측
-                candy[i-1] = candy[i] + 1;
-            }
-            if (i != candy.length - 1 && ratings[i] < ratings[i+1]) { // 우측
-                candy[i+1] = candy[i] + 1;
+        int sum=0;
+        int[] a=new int[ratings.length];
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=1;
+        }
+        for(int i=0;i<ratings.length-1;i++)
+        {
+            if(ratings[i+1]>ratings[i])
+            {
+                a[i+1]=a[i]+1;
             }
         }
-        return Arrays.stream(candy).sum();
+        for(int i=ratings.length-1;i>0;i--)
+        {
+            if(ratings[i-1]>ratings[i])
+            {
+                if(a[i-1]<(a[i]+1))
+                {
+                    a[i-1]=a[i]+1;
+                }
+            }
+        }
+        for(int i=0;i<a.length;i++)
+        {
+            sum+=a[i];
+        }
+        return sum;
     }
 }
